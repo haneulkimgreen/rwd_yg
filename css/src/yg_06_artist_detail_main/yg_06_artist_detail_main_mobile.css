@@ -1,0 +1,36 @@
+/* yg_06_artist_detail_main_mobile.css */
+@media screen and (max-width:480px) {
+  body,html{width: 100%; height: 100%;}
+  #wrap{width: 100%; height: 100%; background-color: #acc;}
+  /* #headBox */
+  #headBox{position: fixed; width: 100%; height: 40px; top: 0; left: 0; padding-left: 10px; box-sizing: border-box; background-color: rgba(255,255,255,0.1); box-shadow: 0 1px 7px rgba(0,0,0,0.2);}
+    #headBox>h1{width: 70px; height: 100%; float: left; transition: all 700ms ease;}
+    #headBox>h1:hover{transform: rotateY(180deg); transition: all 700ms ease;}
+      #headBox>h1>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+      #headBox>h1>a{display: block; width: 100%; height: 100%; /* padding: 25px; box-sizing: border-box; */
+        background-image: url("../../../img/p06/bp_logo_02.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;}
+    #gnb{float: right;}
+      #gnb>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+      #gnb>.main_menu{width: 200px; height: 40px; background-color: #d1000a; color: #fff;}
+      #gnb>.close_menu{display: none; width: 200px; height: 40px; background-color: #d1000a; color: #fff;}
+      #gnb>ul{display: none; position: absolute; width: 200px; height: auto; top: 40px; right: 0;}
+        #gnb>ul>li{position: relative; width: 100%; height: 45px; background-color: rgba(255,255,255,0.6); padding: 15px; box-sizing: border-box; transition: all 300ms ease;}
+          #gnb>ul>li>a{display: block; color: #000; font-size: 16px;}
+          .menu_bar{position: absolute; content: " "; width: 0; height: 45px; top: 0; left: 0; background-color: #d1000a; transition: all 300ms ease;}
+          .menu_bar.bar{width: 8px;}
+          #gnb>ul>li.menu{padding-left:  10px; background-color: rgba(255,255,255,0.8);}
+          #gnb a:focus{background-color: transparent; outline: 0; }
+  /* //#headBox */
+  /* #bg */
+  #bg{width: 100%; height: 100%;
+    background-image: url("../../../img/p06/main.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;}
+    #bg>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+  /* //#bg */
+  }
+/* -----------yg_06_artist_detail_main_mobile.css */
