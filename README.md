@@ -1,2 +1,0 @@
-# rwd_yg
-web
