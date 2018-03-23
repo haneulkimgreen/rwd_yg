@@ -1,0 +1,15 @@
+/* yg_04_multimedia.css */
+@charset "utf-8";
+@import url("./src/src_common/headBox_pcFull.css");
+@import url("./src/src_common/headBox_pc.css");
+@import url("./src/src_common/headBox_tablet.css");
+@import url("./src/src_common/headBox_mobile.css");
+@import url("./src/src_common/footBox_pcFull.css");
+@import url("./src/src_common/footBox_pc.css");
+@import url("./src/src_common/footBox_tablet.css");
+@import url("./src/src_common/footBox_mobile.css");
+@import url("./src/yg_04_multimedia/yg_04_multimedia_base.css");
+@import url("./src/yg_04_multimedia/yg_04_multimedia_pcFull.css");
+@import url("./src/yg_04_multimedia/yg_04_multimedia_pc.css");
+@import url("./src/yg_04_multimedia/yg_04_multimedia_tablet.css");
+@import url("./src/yg_04_multimedia/yg_04_multimedia_mobile.css");
