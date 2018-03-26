@@ -168,20 +168,29 @@
 
     <!-- script -->
     
-    <script
+   <!--  <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
     <script
       src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
       integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script> -->
+      <script src="../js/base/jquery-3.2.1.js"></script>
+      <script src="../js/base/jquery-ui.js"></script>
+      <script>
+          (function($) {
+            $('body').append('<div id="test">');
+            $('#test').css({width:'100%', height:'100%', position:'fixed', zIndex:3000,background:'#fa0'});
+            console.log('jquery test');
+          })(jQuery);
+      </script>
     <!-- <script src="../js/base/jquery-3.2.1.js"></script> -->
     <!-- <script src="../js/base/jquery-ui.js"></script> -->
     <!-- use script(jQuery) -->
-    <script src="../js/common/template.js"></script>
+   <!--  <script src="../js/common/template.js"></script>
     <script src="../js/common/load.js"></script>
-    <script src="../js/src/yg_01_main.js"></script>
+    <script src="../js/src/yg_01_main.js"></script> -->
 </body>
 </html>
   
