@@ -19,6 +19,10 @@
         .sns_wrap>li:nth-child(5)>a{background-image: url("../../../img/logo/twitter_b.png");}
           .sns_wrap>li>a>span{display: block; width: 0; height: 0; overflow: hidden; position: absolute; z-index: -1;}
       .foot_nav{display: none;}
+      .sns_wrap>li:nth-child(1)>a:hover,.sns_wrap>li:nth-child(1)>a:focus{background-image: url("../../../img/logo/youtube_c.png");}
+      .sns_wrap>li:nth-child(3)>a:hover,.sns_wrap>li:nth-child(3)>a:focus{background-image: url("../../../img/logo/facebook_c.png");}
+      .sns_wrap>li:nth-child(4)>a:hover,.sns_wrap>li:nth-child(4)>a:focus{background-image: url("../../../img/logo/weibo_c.png");}
+      .sns_wrap>li:nth-child(5)>a:hover,.sns_wrap>li:nth-child(5)>a:focus{background-image: url("../../../img/logo/twitter_c.png");}
 /* //#footBox */
  }
 /* ----- YG_mobile max480 */

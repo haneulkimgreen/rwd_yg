@@ -1,0 +1,63 @@
+/* yg_05_about_mobile.css */
+@media screen and (max-width:480px) {
+  body,html{width: 100%; height: 100%;}
+  #wrap{width: 100%; height: 100%; background-color: #acc;}
+    /* #mediaWrap */
+    #mediaWrap{position: relative; z-index: 200; width: 100%; height: auto; background-color: #F0F2F4;}
+    #mediaWrap:after{content:" "; display:block; width:100%; height:100%; clear:both;}
+      #mediaWrap>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+      .media_title{width: 320px; height: auto; padding: 90px 0 20px; box-sizing: border-box; font-size: 20px; margin: 0 auto;}
+        .media_title>ul{width: auto; height: 34px;}
+          .media_title>ul>li{float: left; width: auto; height: auto; margin-left: 5px;}
+          .media_title>ul>li:nth-child(1){margin-left: 0;}
+            .media_title>ul>li>button{width: 130px; height: 24px; font-size: 20px; background-color: #F0F2F4; color: #aaa;}
+      .media_list{width: 100%; height: auto;}
+          .media_list>ul>li{overflow: hidden; position: relative; width: 48%; height: 48vw;/* 가로, 세로값이 같으므로 48vw */ margin-top: 4vw; background-color: #fff;}
+          .media_list>ul>li:nth-child(2n-1){float: left;}
+          .media_list>ul>li:nth-child(2n){float: right;}
+            .media_list>ul>li>button{display: block; position: relative; width: 100%; height: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: cover;}
+            .media_list>ul>li>button.hover:after{display: block; content: " "; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4);}
+            .media_list>ul>li:nth-child(1)>button{background-image: url("../../../img/p04/01.png")}
+            .media_list>ul>li:nth-child(2)>button{background-image: url("../../../img/p04/02.png")}
+            .media_list>ul>li:nth-child(3)>button{background-image: url("../../../img/p04/03 .jpg")}
+            .media_list>ul>li:nth-child(4)>button{background-image: url("../../../img/p04/04.jpg")}
+            .media_list>ul>li:nth-child(5)>button{background-image: url("../../../img/p04/05.png")}
+            .media_list>ul>li:nth-child(6)>button{background-image: url("../../../img/p04/06.png")}
+            .media_list>ul>li:nth-child(7)>button{background-image: url("../../../img/p04/07.png")}
+            .media_list>ul>li:nth-child(8)>button{background-image: url("../../../img/p04/08.png")}
+            .media_list>ul>li:nth-child(9)>button{background-image: url("../../../img/p04/09.jpg")}
+            .media_list>ul>li:nth-child(10)>button{background-image: url("../../../img/p04/10.jpg")}
+            .media_list>ul>li:nth-child(11)>button{background-image: url("../../../img/p04/11.png")}
+            .media_list>ul>li:nth-child(12)>button{background-image: url("../../../img/p04/12.png")}
+            .media_list>ul>li:nth-child(13)>button{background-image: url("../../../img/p04/13.png")}
+            .media_list>ul>li:nth-child(14)>button{background-image: url("../../../img/p04/14.png")}
+            .media_list>ul>li:nth-child(15)>button{background-image: url("../../../img/p04/15.png")}
+            .media_list>ul>li:nth-child(16)>button{background-image: url("../../../img/p04/16.png")}
+              .text_wrap{display: none; position: absolute; width: auto; height: auto; top: 30px; left: 10px; color: #fff;}
+                .text_wrap>span{float: left; width: 100%;}
+                .text_wrap>span:nth-child(1){font-size: 16px; font-weight: bold; text-align: left;}
+                .text_wrap>span:nth-child(2){font-size: 12px; margin-top: 10px; text-align: left;}
+              .btn_play{position: absolute; width: 30px; height: 30px; bottom: 10px; left: 10px; border-radius: 50%;
+                background-color: transparent;
+                background-image: url("../../../img/ikon/play_w.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;}
+                .btn_play>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+    /* //#mediaWrap */
+    /* .indicatorWrap */
+    .indicatorWrap{width: 100%; height: auto; background-color: #F0F2F4; position: relative; z-index: 200; padding: 90px 0; box-sizing: border-box; margin-top: -1px;}
+      .indicator{width: 100%; height: auto; margin: 0 auto;}
+        .indicator>h3{display: block; width: 0; height: 0; overflow: hidden; position: absolute; z-index: -1;}
+        .indi_top{width: calc(50% - 55px); float: left; margin-left: 40px;}
+          .indi_top>button{background-color: #F0F2F4; font-size: 0;}
+            .indi_top>button>i{font-size: 50px;}
+        .indi_more{float: right; margin-right: 40px;}
+          .indi_more>button{font-size: 30px; color: #333;  text-transform: uppercase; background-color: rgba(255,255,255,0);}
+          .indi_more>button>i{display: none;}
+/* //.indicatorWrap */
+}
+/* ------------yg_05_about_mobile.css */

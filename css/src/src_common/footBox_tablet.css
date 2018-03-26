@@ -28,6 +28,10 @@
       .foot_nav>ul>li{float:left; margin-top: 20px; margin-right: 20px;}
       .foot_nav>ul>li:nth-child(4){margin-right: 0;}
         .foot_nav>ul>li>a{display: block; font-size: 12px; color: #333; text-transform: uppercase;}
+      .sns_wrap>li:nth-child(1)>a:hover,.sns_wrap>li:nth-child(1)>a:focus{background-image: url("../../../img/logo/youtube_c.png");}
+      .sns_wrap>li:nth-child(3)>a:hover,.sns_wrap>li:nth-child(3)>a:focus{background-image: url("../../../img/logo/facebook_c.png");}
+      .sns_wrap>li:nth-child(4)>a:hover,.sns_wrap>li:nth-child(4)>a:focus{background-image: url("../../../img/logo/weibo_c.png");}
+      .sns_wrap>li:nth-child(5)>a:hover,.sns_wrap>li:nth-child(5)>a:focus{background-image: url("../../../img/logo/twitter_c.png");}
 /* //#footBox */
 }
 /* -----yg_tablet min481 ~ max959 */
