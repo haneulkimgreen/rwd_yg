@@ -24,9 +24,9 @@
     // 네비게이션에 해당 페이지 이름 넣기 
     var navigation = $('.navigation').find('p');
     var nowHref = $(location).attr('href');  
-    var hrefP = nowHref.split("_")[2];
+    var hrefP = nowHref.split("_")[3];
     var hrefN = hrefP.split(".")[0];
-    // console.log(hrefN);
+    // console.log(nowHref);
     navigation.text(hrefN);
     navigation.css({textTransform: 'capitalize'});
 })(this.jQuery);

@@ -15,14 +15,14 @@
       var _this = $(this);
       _this.children('span').stop().fadeIn();
       _this.addClass('hover');
-      _this.siblings().css({backgroundImage: 'url("'+'../../../img/ikon/play_r.png'+'")'});
+      _this.siblings().css({backgroundImage: 'url("'+'../img/ikon/play_r.png'+'")'});
       }
       var hideText = function(e){
       e.preventDefault();
       var _this = $(this);
       _this.children('span').stop().fadeOut();
       _this.removeClass('hover');
-      _this.siblings().css({backgroundImage: 'url("'+'../../../img/ikon/play_w.png'+'")'});
+      _this.siblings().css({backgroundImage: 'url("'+'../img/ikon/play_w.png'+'")'});
     }
     
     mediaB.on('focus',showText);
