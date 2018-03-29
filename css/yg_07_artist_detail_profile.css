@@ -1,0 +1,7 @@
+/* yg_07_artist_detail_profile.css */
+@charset "utf-8";
+@import url("./src/yg_07_artist_detail_profile/yg_07_artist_detail_profile_base.css");
+@import url("./src/yg_07_artist_detail_profile/yg_07_artist_detail_profile_pcFull.css");
+@import url("./src/yg_07_artist_detail_profile/yg_07_artist_detail_profile_pc.css");
+@import url("./src/yg_07_artist_detail_profile/yg_07_artist_detail_profile_tablet.css");
+@import url("./src/yg_07_artist_detail_profile/yg_07_artist_detail_profile_mobile.css");

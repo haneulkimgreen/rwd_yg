@@ -6,14 +6,14 @@
     #aboutWrap{position: relative; z-index: 200; width: 100%; height: auto; background-color: #F0F2F4;}
     #aboutWrap:after{content:" "; display:block; width:100%; height:100%; clear:both;}
       #aboutWrap>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
-      .about_title{position: relative; width: 100%; height: 290px; padding: 90px 0;}
+      .about_title{position: relative; width: 100%; height: 200px; padding: 90px 0;}
         .about_title>h3{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
-          .about_title>span{position: absolute; width: 370px; height: auto; left: 50%; margin-left: -130px;}
-          .about_title>span:nth-of-type(1){top: 90px; font-size: 54px; font-weight: bold;}
-          .about_title>span:nth-of-type(2){top: 320px; font-size: 35px;}
+          .about_title>span{position: absolute; width: 270px; height: auto; left: 50%; margin-left: -100px;}
+          .about_title>span:nth-of-type(1){top: 90px; font-size: 34px; font-weight: bold;}
+          .about_title>span:nth-of-type(2){top: 230px; font-size: 25px;}
       .about_txt{width: 100%; height: auto;}
         .about_txt>h3{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
-        .about_txt>div{width: 900px; height: 600px; margin: 0 auto; padding: 150px 100px;box-sizing: border-box;
+        .about_txt>div{width: 100%; height: 60vw; margin: 0 auto; padding: 13vw 10vw;box-sizing: border-box;
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;}
@@ -22,35 +22,35 @@
           .back_02>span{color: #000;}
         .back_03{background-image: url("../../../img/p05/backB_02.jpg");}
           .back_03>span{color: #fff;}
-          .yg_ent{display: block; width: 700px; font-size: 35px; margin-bottom: 70px; text-align: center;}
-          .about_txt>div>span:nth-child(2){width: 700px; font-size: 18px; line-height: 30px; text-align: center;}
+          .yg_ent{display: block; width: 100%; font-size: 16px; margin-bottom: 20px; text-align: center;}
+          .about_txt>div>span:nth-child(2){width: 100%; font-size: 12px; line-height: 20px; text-align: center;}
     /* //#aboutWrap */
     /* #historyWrap */
     #historyWrap{position: relative; z-index: 200; width: 100%; height: auto; background-color: #F0F2F4;}
     #historyWrap:after{content:" "; display:block; width:100%; height:100%; clear:both;}
       #historyWrap>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
-      .history_logo{position: absolute; width: 160px; height: 160px; border-radius: 50%; top: -80px; left: 50%; margin-left: -80px;
+      .history_logo{position: absolute; width: 80px; height: 80px; border-radius: 50%; top: -30px; left: 50%; margin-left: -40px;
         background-color: #fff;
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
         background-image: url("../../../img/logo/YG_symbol_B.png");}
         .history_logo>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
-      .history_contents{width: 900px; height: auto; padding-bottom: 200px; box-sizing: border-box; margin: 0 auto;}
+      .history_contents{width: 100%; height: auto; padding-bottom: 200px; box-sizing: border-box; margin: 0 auto;}
       .history_contents:after{content:" "; display:block; width:100%; height:100%; clear:both;}
         .history_contents>ul{float: left; width: 50%; height: auto; box-sizing: border-box;}
-        .fir_list{padding-top: 100px;}
+        .fir_list{padding-top: 50px;}
           .fir_list>li:after{content:" "; display:block; width:100%; height:100%; clear:both;}
             .fir_list>li>div{float: right;}
             .fir_list>li>span{text-align: right;}
             
-        .sec_list{padding-top: 150px; border-left: 1px solid #000;}
+        .sec_list{padding-top: 70px; border-left: 1px solid #000;}
           .sec_list>li:after{content:" "; display:block; width:100%; height:100%; clear:both;}
             .sec_list>li>div{float: left;}
             .sec_list>li>span{text-align: left;}
 
-          .fir_list>li,.sec_list>li{width: 100%; height: auto; padding: 30px; box-sizing: border-box;}
-            .fir_list>li>span,.sec_list>li>span{float: left; width: 390px; font-size: 20px; line-height: 35px; font-weight: bold;}
+          .fir_list>li,.sec_list>li{width: 100%; height: auto; padding: 10px; box-sizing: border-box;}
+            .fir_list>li>span,.sec_list>li>span{float: left; width: 100%; font-size: 12px; line-height: 20px; font-weight: bold;}
             .fir_list>li>span:nth-of-type(3),.sec_list>li>span:nth-of-type(3){color: #808080;}
               .fir_list>li>div>span,.sec_list>li>div>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
             .fir_list>li>div,.sec_list>li>div{margin-top: 20px;
@@ -58,8 +58,8 @@
               background-repeat: no-repeat;
               background-position: center;
               background-size: cover;}
-        .history_contents>ul>li>.concert_img{width: 390px; height: 560px;}
-        .history_contents>ul>li>.album_img{width: 390px; height: 390px;}
+        .history_contents>ul>li>.concert_img{width: 45vw; height: 64vw;}
+        .history_contents>ul>li>.album_img{width: 45vw; height: 45vw;}
         .fir_list>li:nth-child(1)>div{background-image: url("../../../img/p05/history/bigbang_tour_j.jpg");}
         .fir_list>li:nth-child(2)>div{background-image: url("../../../img/p05/history/sech_01.jpg");}
         .fir_list>li:nth-child(3)>div{background-image: url("../../../img/p05/history/epic_01.jpg");}
@@ -73,14 +73,20 @@
         .sec_list>li:nth-child(5)>div{background-image: url("../../../img/p05/history/gd_01.jpg");}
       .history_last{position: absolute; width: 420px; height: 200px; bottom: -50px; left: 50%; margin-left: -210px; font-size: 180px; font-weight: bold; line-height: 200px;}
     /* //#historyWrap */
-    /* .indicatorWrap */
-    .indicatorWrap{width: 100%; height: auto; background-color: #F0F2F4; position: relative; z-index: 200; padding: 90px 0; box-sizing: border-box; margin-top: -2px;}
-      .indicator{width: 1100px; height: auto; margin: 0 auto;}
+/* .indicatorWrap */
+    .indicatorWrap{width: 100%; height: auto; background-color: #F0F2F4; position: relative; z-index: 200; padding: 90px 0 150px 0; box-sizing: border-box; margin-top: -1px;}
+      .indicator{width: 100%; height: auto; margin: 0 auto;}
         .indicator>h3{display: block; width: 0; height: 0; overflow: hidden; position: absolute; z-index: -1;}
-        .indicator>div{float:left;}
-        .indi_top{width: calc(50% - 55px);}
+        .indi_top{width: calc(50% - 55px); float: left; margin-left: 40px;}
           .indi_top>button{font-size: 30px; color: #333;  text-transform: uppercase; background-color: rgba(255,255,255,0);}
+        .indi_more{float: right; margin-right: 40px;}
           .indi_more>button{font-size: 30px; color: #333;  text-transform: uppercase; background-color: rgba(255,255,255,0);}
+          .indi_more>button>i{display: none;}
 /* //.indicatorWrap */
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .about_txt>div{padding: 18vw 15vw;}
+  .yg_ent{font-size: 20px;}
+  .about_txt>div>span:nth-child(2){display: block; max-width: 600px; margin: 0 auto; font-size: 16px; line-height: 24px;}
 }
 /* ----------yg_05_about_tablet.css */

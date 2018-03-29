@@ -1,0 +1,70 @@
+/* yg_07_artist_detail_profile_mobile.css */
+@media screen and (max-width:480px) {
+  body,html{width: 100%; height: 100%;}
+  #wrap{width: 100%; height: 100%; background-color: #F6A7BA;}
+  /* #headBox */
+  #headBox{position: fixed; z-index: 1; width: 100%; height: 40px; top: 0; left: 0; padding-left: 10px; box-sizing: border-box; background-color: rgba(255,255,255,0.1); box-shadow: 0 1px 7px rgba(0,0,0,0.2);}
+    #headBox>h1{width: 70px; height: 100%; float: left; transition: all 700ms ease;}
+    #headBox>h1:hover{transform: rotateY(180deg); transition: all 700ms ease;}
+      #headBox>h1>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+      #headBox>h1>a{display: block; width: 100%; height: 100%; /* padding: 25px; box-sizing: border-box; */
+        background-image: url("../../../img/p06/bp_logo_02.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;}
+    #gnb{float: right;}
+      #gnb>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+      #gnb>.main_menu{width: 200px; height: 40px; background-color: #d1000a; color: #fff;}
+      #gnb>.close_menu{display: none; width: 200px; height: 40px; background-color: #d1000a; color: #fff;}
+      #gnb>ul{display: none; position: absolute; width: 200px; height: auto; top: 40px; right: 0;}
+        #gnb>ul>li{position: relative; width: 100%; height: 45px; background-color: rgba(255,255,255,0.6); padding: 15px; box-sizing: border-box; transition: all 300ms ease;}
+          #gnb>ul>li>a{display: block; color: #000; font-size: 16px;}
+          .menu_bar{position: absolute; content: " "; width: 0; height: 45px; top: 0; left: 0; background-color: #d1000a; transition: all 300ms ease;}
+          .menu_bar.bar{width: 8px;}
+          #gnb>ul>li.menu{padding-left:  10px; background-color: rgba(255,255,255,0.8);}
+          #gnb a:focus{background-color: transparent; outline: 0; }
+  /* //#headBox */
+  /* #bg */
+  #bg{position: relative; width: 100%; height: 100%;
+    background-image: url("../../../img/p07/back_02.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;}
+    #bg>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+    .artist_pic{display: none; position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;}
+    .mem_01{display: block; background-image: url("../../../img/p07/1.jpg");}
+    .mem_02{background-image: url("../../../img/p07/2.jpg");}
+    .mem_03{background-image: url("../../../img/p07/3.jpg");}
+    .mem_04{background-image: url("../../../img/p07/4.jpg");}
+      .artist_pic>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+  /* //#bg */
+  /* .thumb_list */
+  .thumb_list{position: absolute; width: 40px; height: 190px; top: 12%; left: 3%;}
+    .thumb_list>ul{width: 100%; height: 100%;}
+      .thumb_list>ul>li{float: left; width: 40px; height: 40px; margin-bottom: 10px; border: 2px solid #fff; box-sizing: border-box;}
+      .thumb_list>ul>li:nth-child(4){margin-bottom: 0;}
+        .thumb_list>ul>li>button{width: 100%; height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;}
+        .thumb_list>ul>li:nth-child(1)>button{background-image: url("../../../img/p07/1.jpg");}
+        .thumb_list>ul>li:nth-child(2)>button{background-image: url("../../../img/p07/2.jpg");}
+        .thumb_list>ul>li:nth-child(3)>button{background-image: url("../../../img/p07/3.jpg");}
+        .thumb_list>ul>li:nth-child(4)>button{background-image: url("../../../img/p07/4.jpg");}
+          .thumb_list>ul>li>button>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+          .thumb_list>ul>li>button:focus:after{display: block; content: " "; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
+  /* //.thumb_list */
+  /* .mem_info */
+  .mem_info{position: absolute; top: 70%; left: 0;}
+    .mem_info>ul{display: none;}
+    .mem_info>ul:nth-child(1){display: block;}
+      .mem_info>ul>li{width: 260px;}
+      .mem_info>ul>li>span{float: left; height: 30px; color: #fff; font-size: 18px; line-height: 30px; font-weight: bold;}
+      .mem_info>ul>li>span:nth-of-type(1){display: block; width: 100px;}
+      .mem_info>ul>li>span:nth-of-type(2){width: 160px;}
+  /* //.mem_info */
+  }
+/* -----------yg_07_artist_detail_profile_mobile.css */
