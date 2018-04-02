@@ -1,9 +1,9 @@
 /* yg_08_artist_detail_album_mobile.css */
 @media screen and (max-width:480px) {
   body,html{width: 100%; height: 100%;}
-  #wrap{width: 100%; height: 100%; background-color: #F6A7BA;}
+  #wrap{width: 100%; height: auto; min-height: 100%; background-color: #F0F2F4;}
   /* #headBox */
-  #headBox{position: fixed; width: 100%; height: 40px; top: 0; left: 0; padding-left: 10px; box-sizing: border-box; background-color: rgba(255,255,255,0.1); box-shadow: 0 1px 7px rgba(0,0,0,0.2);}
+  #headBox{position: fixed; width: 100%; height: 40px; top: 0; left: 0; padding-left: 10px; box-sizing: border-box; background-color: rgba(255,255,255,1); box-shadow: 0 1px 7px rgba(0,0,0,0.2);}
     #headBox>h1{width: 70px; height: 100%; float: left; transition: all 700ms ease;}
     #headBox>h1:hover{transform: rotateY(180deg); transition: all 700ms ease;}
       #headBox>h1>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
@@ -24,13 +24,73 @@
           #gnb>ul>li.menu{padding-left:  10px; background-color: rgba(255,255,255,0.8);}
           #gnb a:focus{background-color: transparent; outline: 0; }
   /* //#headBox */
-  /* #bg */
-  #bg{width: 100%; height: 100%;
-
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;}
-    #bg>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
-  /* //#bg */
+  /* #albumWrap */
+  #albumWrap,#albumWrap_02,#albumWrap_03{width: 100%; height: auto; margin: 40px auto 0; padding: 50px 0; box-sizing: border-box;}
+  #albumWrap:after{content:" "; display:block; width:100%; height:100%; clear:both;}
+    .album_title{width: 210px; height: 40px; margin: 0 auto;}
+      .album_title>p{float: left; font-weight: bold;}
+      .album_title>p:nth-child(1){width: auto; margin-right: 30px; font-size: 16px;}
+      .album_title>p:nth-child(2){font-size: 16px;}
+    .album_info{float: left; width: 100%;}
+      .album_info>div{width: 100%; height: 100vw; 
+        background-image: url("../../../img/p08/last.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;}
+      .album_info>div>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+      .info_table{display: none;}
+        .info_table>dt{float: left; width: 130px; height: 36px;}
+        .info_table>dd{float: left; width: 270px; height: 36px;}
+    .album_text{float: left; width: 100%; height: auto; padding: 0 16px; box-sizing: border-box;}
+      .view_off,.view_on{padding: 40px 0; box-sizing: border-box; font-size: 16px; line-height: 30px;}
+        .view_off>p,.view_on>p{display: block; margin-bottom: 30px;}
+        .view_off>p:nth-child(1),.view_on>p:nth-child(1){margin-bottom: 0; font-weight: bold;}
+      .view_on{display: none;}
+      .fold_btn{display: none;}
+      .album_text>button{width: 70px; height: 40px; margin-bottom: 70px; background-color: #F0F2F4; font-size: 24px; font-weight: bold;}
+      .album_text>button:focus{color: #000;}
+      .album_text>p:nth-last-of-type(1){font-size: 24px; font-weight: bold; margin-bottom: 10px;}
+      .album_text>ol{width: 100%;height: auto; border-top: 2px solid #000; border-bottom: 1px solid #000; }
+        .album_text>ol>li{position: relative; box-sizing: border-box; padding-left:1rem; margin-left: 1.5rem;  font-size: 18px; font-weight: bold; line-height: 40px; list-style: decimal;}
+       .album_text>ol>li:after{content:" "; display: block; position: absolute; border-bottom: 1px solid #000; width: calc(100% + 1.5rem); height: 0; left:-1.5rem; bottom: 0;}
+       .album_text>ol>li:nth-last-of-type(1):after{border-bottom: 0;}
+      /* ol 사용시 숫자와 글자간의 간격, border시의 여백을 보완하기 위해 after를 만든 후 마진값만큼 길게 한 후 그만큼 왼쪽에서 부터 시작한다. */
+      /* 앨범추가시 html에 정보 입력 후 아래 부분과 동일하게만 css를 추가한다. */
+      #albumWrap_02{display: none;}
+      #albumWrap_03{display: none;}
+      #albumWrap_02:after{content:" "; display:block; width:100%; height:100%; clear:both;}
+      #albumWrap_03:after{content:" "; display:block; width:100%; height:100%; clear:both;}
+    #albumWrap>h2,#albumWrap_02>h2,#albumWrap_03>h2{width: 100%; font-size: 24px; line-height: 30px; text-align: center;}
+      #albumWrap_02 .album_info>div{background-image: url("../../../img/p08/two.jpg");}
+      #albumWrap_03 .album_info>div{background-image: url("../../../img/p08/one.jpg");}
+      .song_title{font-weight: bold;}
+  /* //#albumWrap */
+  /* .album_list */
+  .album_list{position: relative; width: 100%; height: 200px; margin: 0 auto;}
+  .album_list:after{content:" "; display:block; width:100%; height: 0; clear:both;}
+    .album_list>ul{position: absolute; width: 360px; height: 100px; top: 0; left: 50%; margin-left: -180px;}
+      .album_list>ul>li{float: left; width: 100px; height: 100px; margin-right: 30px;}
+      .album_list>ul>li:last-child{margin-right: 0;}
+        .album_list>ul>li>button{width: 100%; height: 100%;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;}
+        .album_list>ul>li:nth-child(1)>button{background-image: url("../../../img/p08/last.jpg");}
+        .album_list>ul>li:nth-child(2)>button{background-image: url("../../../img/p08/two.jpg");}
+        .album_list>ul>li:nth-child(3)>button{background-image: url("../../../img/p08/one.jpg");}
+          .album_list>ul>li>button>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
+  /* //.album_list */
+  }
+  @media screen and (min-width: 280px) and (max-width: 380px){
+    /* .album_list */
+    /* 가로 사이즈 380px이하는 앨범 리스트를 3개이상을 1줄로 하면 크기가 접근성에 벗어나거나 
+       사용자가 불편할 수 있기 때문에 2개 1줄로 한다. 
+       전체 height, ul height, 마지막에서 2번째 li의 margin-bottom 값은 갯수에 따라 수정한다. */
+  .album_list{height: 300px;}
+    .album_list>ul{width: 230px; height: auto; margin-left: -115px;}
+      .album_list>ul>li{margin-right: 30px; margin-bottom: 30px;}
+      .album_list>ul>li:nth-last-of-type(1){margin-bottom: 0;}
+      .album_list>ul>li:nth-child(2n){margin-right: 0;}
+  /* //.album_list */
   }
 /* -----------yg_08_artist_detail_album_mobile.css */

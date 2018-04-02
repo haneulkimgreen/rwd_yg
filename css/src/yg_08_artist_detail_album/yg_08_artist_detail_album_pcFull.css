@@ -25,7 +25,6 @@
   /* #albumWrap */
   #albumWrap,#albumWrap_02,#albumWrap_03{width: 1100px; height: auto; margin: 100px auto 0; padding: 100px 0; box-sizing: border-box;}
   #albumWrap:after{content:" "; display:block; width:100%; height:100%; clear:both;}
-    #albumWrap>h2,#albumWrap_02>h2,#albumWrap_03>h2{width: 100%; height: 60px; font-size: 36px; line-height: 60px;}
     .album_title{width: 100%; height: 60px;}
       .album_title>p{float: left; font-weight: bold;}
       .album_title>p:nth-child(1){width: auto; margin-right: 30px; font-size: 20px;}
@@ -46,7 +45,7 @@
         .view_off>p:nth-child(1),.view_on>p:nth-child(1){margin-bottom: 0; font-weight: bold;}
       .view_on{display: none;}
       .fold_btn{display: none;}
-      .album_text>button{width: 70px; height: 30px; margin-bottom: 70px; background-color: #F0F2F4; font-size: 24px; font-weight: bold;}
+      .album_text>button{width: 70px; height: 40px; margin-bottom: 70px; background-color: #F0F2F4; font-size: 24px; font-weight: bold;}
       .album_text>button:focus{color: #000;}
       .album_text>p:nth-last-of-type(1){font-size: 24px; font-weight: bold; margin-bottom: 10px;}
       .album_text>ol{width: 100%;height: auto; border-top: 2px solid #000; border-bottom: 1px solid #000; }
@@ -54,12 +53,15 @@
        .album_text>ol>li:after{content:" "; display: block; position: absolute; border-bottom: 1px solid #000; width: calc(100% + 1.5rem); height: 0; left:-1.5rem; bottom: 0;}
        .album_text>ol>li:nth-last-of-type(1):after{border-bottom: 0;}
       /* ol 사용시 숫자와 글자간의 간격, border시의 여백을 보완하기 위해 after를 만든 후 마진값만큼 길게 한 후 그만큼 왼쪽에서 부터 시작한다. */
+      /* 앨범추가시 html에 정보 입력 후 아래 부분과 동일하게만 css를 추가한다. */
       #albumWrap_02{display: none;}
       #albumWrap_03{display: none;}
       #albumWrap_02:after{content:" "; display:block; width:100%; height:100%; clear:both;}
       #albumWrap_03:after{content:" "; display:block; width:100%; height:100%; clear:both;}
+    #albumWrap>h2,#albumWrap_02>h2,#albumWrap_03>h2{width: 100%; height: 60px; font-size: 36px; line-height: 60px;}
       #albumWrap_02 .album_info>div{background-image: url("../../../img/p08/two.jpg");}
       #albumWrap_03 .album_info>div{background-image: url("../../../img/p08/one.jpg");}
+      .song_title{font-weight: bold;}
   /* //#albumWrap */
   /* .album_list */
   .album_list{position: relative; width: 1100px; height: 200px; margin: 0 auto;}
