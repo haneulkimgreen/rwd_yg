@@ -8,7 +8,7 @@
       #mediaWrap>h2{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
       .media_title{width: 480px; height: auto; padding: 90px 0 20px; box-sizing: border-box; font-size: 30px; margin: 0 auto;}
         .media_title>ul{width: auto; height: 37px;}
-          .media_title>ul>li{float: left; width: auto; height: auto; margin-left: 5px;}
+          .media_title>ul>li{float: left; width: auto; height: auto; margin-left: 5px; line-height: 37px;}
           .media_title>ul>li:nth-child(1){margin-left: 0;}
             .media_title>ul>li>button{width: 180px; height: 37px; font-size: 30px; background-color: #F0F2F4; color: #aaa;}
       .media_list{width: 100%; height: auto;}
