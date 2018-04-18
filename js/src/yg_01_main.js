@@ -5,4 +5,5 @@
     var hei = $(window).height();
     // console.log(hei);
     albumWrap.css({marginTop:hei});
+    
 })(this.jQuery);

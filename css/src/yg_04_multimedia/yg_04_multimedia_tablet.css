@@ -10,7 +10,7 @@
         .media_title>ul{width: auto; height: 37px;}
           .media_title>ul>li{float: left; width: auto; height: auto; margin-left: 5px; line-height: 37px;}
           .media_title>ul>li:nth-child(1){margin-left: 0;}
-            .media_title>ul>li>button{width: 180px; height: 37px; font-size: 30px; background-color: #F0F2F4; color: #aaa;}
+            .media_title>ul>li>button{width: 180px; height: 37px; font-size: 30px; background-color: #F0F2F4; color: #808080;}
       .media_list{width: 100%; height: auto;}
           .media_list>ul>li{overflow: hidden; position: relative; width: 48%; height: 48vw;/* 가로, 세로값이 같으므로 48vw */ margin-top: 20px; background-color: #fff;}
           .media_list>ul>li:nth-child(2n-1){float: left;}
