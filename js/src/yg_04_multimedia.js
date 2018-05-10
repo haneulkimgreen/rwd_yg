@@ -30,4 +30,12 @@
     mediaB.on('mouseenter',showText);
     mediaB.on('mouseleave',hideText);
 
+    // top버튼에 기능 넣기
+    var topBtn = $('.indi_top').children('button');
+    var body = $("html, body");
+    topBtn.on('click', function(e){
+      e.preventDefault();
+      body.stop().animate({scrollTop:0});
+    });
+
 })(this.jQuery);

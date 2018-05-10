@@ -66,6 +66,7 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;}
+                .news_img>span{display: block; overflow: hidden; position: absolute; z-index: -1; width: 0; height: 0;}
             .news_list>.feed_box:nth-child(1)>a>div{background-image: url("../../../img/new_img/news_01.jpg");}
             .news_list>.feed_box:nth-child(2)>a>div{background-image: url("../../../img/new_img/news_02.jpg");}
             .news_list>.feed_box:nth-child(3)>a>div{background-image: url("../../../img/new_img/news_03.jpg");}

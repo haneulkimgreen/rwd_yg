@@ -30,7 +30,7 @@
         mainMenu.show();
         closeMenu.hide();
         menuUl.hide();
-      }
+      };
     // tab,mobile gnb>ul>li,>a에 효과주기
     var mtBar = function(e){
       e.preventDefault();
@@ -46,11 +46,11 @@
     var pcMenu = function(e){
         e.preventDefault();
         $(this).parent().addClass('menu');
-      }
+      };
     var pcRemove = function(e){
         e.preventDefault();
         $(this).parent().removeClass('menu');
-      }
+      };
 
 /*      var removeBar = function(t){
         $(this).parent().removeClass('menu');
