@@ -1,5 +1,15 @@
 // yg_01_main.js
 (function($) {
+  // max480
+  // max960
+  // max1366
+  // min1367~
+  var rwd = function(){
+    var rwdW = parseInt($(window).width());
+    var mob  = 480;
+    var tab  = 960;
+    var pc   = 1366;
+
     // 동영상 아래부터 컨텐츠들 나오게 하기
     var albumWrap = $('#albumWrap');
     var hei = $(window).height();
@@ -78,38 +88,126 @@
 
     //musicVideoWrap 큰 이미지인 var mvBoxImg = $('.mv_box').children('button'); 클릭 시 모달윈도우
     var modalMv = $('.modal_mv');
-    mvBoxImg.on('click', function(e){
-      e.preventDefault();
-      var mvBoxImgClass = mvBoxImg.attr('class'); //큰 이미지의 클래스를 통해 현재 이미지가 어떤 리스트를 클릭하여 얻은 이미지인지 파악
-      var modalMvClose = $('.modal_mv_close'); //모달 윈도우 닫기버튼
-      if(mvBoxImgClass == 'mv_box_01' || mvBoxImgClass == 'mv_01 mv_box_01'){ 
-        //큰 이미지의 클래스에 따라 나오는 뮤비가 달라야 하므로 속성의 클래스 별로 iframe의 src를 다르게 만든다.
-        //첫번째만 조건이 다른 이유는 처음 화면에서 바로 큰 이미지 클릭 시에도 모달이 나오게 하기 위해서 
-        modalMv.show(); //미리 html을 통해 만들고  css로 none상태인 모달 윈도우 불러오기
-        modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/vecSVX1QYbQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
-        modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
-      }else if(mvBoxImgClass == 'mv_box_02'){
-        modalMv.show();
-        modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/Amq-qlqbjYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
-        modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
-      }else if(mvBoxImgClass == 'mv_box_03'){
-        modalMv.show();
-        modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/pTD9Jysi3_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
-        modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
-      }else if(mvBoxImgClass == 'mv_box_04'){
-        modalMv.show();
-        modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/iTt9rS2RH-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
-        modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
-      }else if(mvBoxImgClass == 'mv_box_05'){
-        modalMv.show();
-        modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/k24UEMaLwEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
-        modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
-      }
-    modalMvClose.on('click', function(e){
-      e.preventDefault();
-      modalMv.hide(); //닫기버튼 클릭 시 모달 none
-      modalMv.find('iframe').remove(); //iframe을 없애지 않으면 iframe이 쌓여 계속 첫번째 뮤비만 나오게 된다
-    });
+    if(rwdW <= mob){
+      // mobile
+        mvBoxImg.on('click', function(e){
+          e.preventDefault();
+          var mvBoxImgClass = mvBoxImg.attr('class'); //큰 이미지의 클래스를 통해 현재 이미지가 어떤 리스트를 클릭하여 얻은 이미지인지 파악
+          var modalMvClose = $('.modal_mv_close'); //모달 윈도우 닫기버튼
+          if(mvBoxImgClass == 'mv_box_01' || mvBoxImgClass == 'mv_01 mv_box_01'){ 
+            //큰 이미지의 클래스에 따라 나오는 뮤비가 달라야 하므로 속성의 클래스 별로 iframe의 src를 다르게 만든다.
+            //첫번째만 조건이 다른 이유는 처음 화면에서 바로 큰 이미지 클릭 시에도 모달이 나오게 하기 위해서 
+            modalMv.show(); //미리 html을 통해 만들고  css로 none상태인 모달 윈도우 불러오기
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/vecSVX1QYbQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }else if(mvBoxImgClass == 'mv_box_02'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/Amq-qlqbjYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }else if(mvBoxImgClass == 'mv_box_03'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/pTD9Jysi3_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }else if(mvBoxImgClass == 'mv_box_04'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/iTt9rS2RH-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }else if(mvBoxImgClass == 'mv_box_05'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/k24UEMaLwEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }
+        modalMvClose.on('click', function(e){
+          e.preventDefault();
+          modalMv.hide(); //닫기버튼 클릭 시 모달 none
+          modalMv.find('iframe').remove(); //iframe을 없애지 않으면 iframe이 쌓여 계속 첫번째 뮤비만 나오게 된다
+        });
+        }); //mvBoxImg.on 'click' (모달 윈도우 기능)
+    }else if(mob < rwdW && rwdW < tab){
+      // tab
+        mvBoxImg.on('click', function(e){
+          e.preventDefault();
+          var mvBoxImgClass = mvBoxImg.attr('class'); //큰 이미지의 클래스를 통해 현재 이미지가 어떤 리스트를 클릭하여 얻은 이미지인지 파악
+          var modalMvClose = $('.modal_mv_close'); //모달 윈도우 닫기버튼
+          if(mvBoxImgClass == 'mv_box_01' || mvBoxImgClass == 'mv_01 mv_box_01'){ 
+            //큰 이미지의 클래스에 따라 나오는 뮤비가 달라야 하므로 속성의 클래스 별로 iframe의 src를 다르게 만든다.
+            //첫번째만 조건이 다른 이유는 처음 화면에서 바로 큰 이미지 클릭 시에도 모달이 나오게 하기 위해서 
+            modalMv.show(); //미리 html을 통해 만들고  css로 none상태인 모달 윈도우 불러오기
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/vecSVX1QYbQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }else if(mvBoxImgClass == 'mv_box_02'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/Amq-qlqbjYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }else if(mvBoxImgClass == 'mv_box_03'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/pTD9Jysi3_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }else if(mvBoxImgClass == 'mv_box_04'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/iTt9rS2RH-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }else if(mvBoxImgClass == 'mv_box_05'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="100%" height="60%" src="https://www.youtube.com/embed/k24UEMaLwEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '30%'});
+          }
+        modalMvClose.on('click', function(e){
+          e.preventDefault();
+          modalMv.hide(); //닫기버튼 클릭 시 모달 none
+          modalMv.find('iframe').remove(); //iframe을 없애지 않으면 iframe이 쌓여 계속 첫번째 뮤비만 나오게 된다
+        });
+        }); //mvBoxImg.on 'click' (모달 윈도우 기능)
+    }else{
+      // pc,pcFull
+        mvBoxImg.on('click', function(e){
+          e.preventDefault();
+          var mvBoxImgClass = mvBoxImg.attr('class'); //큰 이미지의 클래스를 통해 현재 이미지가 어떤 리스트를 클릭하여 얻은 이미지인지 파악
+          var modalMvClose = $('.modal_mv_close'); //모달 윈도우 닫기버튼
+          if(mvBoxImgClass == 'mv_box_01' || mvBoxImgClass == 'mv_01 mv_box_01'){ 
+            //큰 이미지의 클래스에 따라 나오는 뮤비가 달라야 하므로 속성의 클래스 별로 iframe의 src를 다르게 만든다.
+            //첫번째만 조건이 다른 이유는 처음 화면에서 바로 큰 이미지 클릭 시에도 모달이 나오게 하기 위해서 
+            modalMv.show(); //미리 html을 통해 만들고  css로 none상태인 모달 윈도우 불러오기
+            modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/vecSVX1QYbQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
+          }else if(mvBoxImgClass == 'mv_box_02'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/Amq-qlqbjYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
+          }else if(mvBoxImgClass == 'mv_box_03'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/pTD9Jysi3_g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
+          }else if(mvBoxImgClass == 'mv_box_04'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/iTt9rS2RH-o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
+          }else if(mvBoxImgClass == 'mv_box_05'){
+            modalMv.show();
+            modalMv.prepend('<iframe width="840" height="472" src="https://www.youtube.com/embed/k24UEMaLwEk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+            modalMv.find('iframe').css({marginTop: '-236px', marginLeft: '-420px'});
+          }
+        modalMvClose.on('click', function(e){
+          e.preventDefault();
+          modalMv.hide(); //닫기버튼 클릭 시 모달 none
+          modalMv.find('iframe').remove(); //iframe을 없애지 않으면 iframe이 쌓여 계속 첫번째 뮤비만 나오게 된다
+        });
+        }); //mvBoxImg.on 'click' (모달 윈도우 기능)
+    } //가로사이즈 pc,pcFull
+}; // //rwd()
+rwd();
 
-    });
+// parseInt() 주어진값을 정수형 숫자로 변환처리
+// 예: 40px  -> parseInt(40px)  -> 40
+// 예2: 43.3 ->  parseInt(43.3) -> 43
+  var $w = parseInt($(window).width());
+  $(window).on('resize',function(){
+    var nowW = $(window).width();
+    if($w !== nowW){
+      location.reload();
+      rwd();
+// 리로드-사이즈 바뀔떄마다 새로고침으로 적용
+// 아래꺼-비동기처럼 변화를 주겠다
+    }
+  });
 })(this.jQuery);

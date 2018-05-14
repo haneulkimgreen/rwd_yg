@@ -1,7 +1,7 @@
 // yg_06_artist_detail_main.js
 (function($) {
   // max480
-  // max767
+  // max960
   // max1366
   // min1367~
   var rwd = function(){
