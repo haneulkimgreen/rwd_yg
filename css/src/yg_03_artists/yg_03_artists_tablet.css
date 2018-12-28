@@ -19,17 +19,17 @@
             background-size: cover;}
           .pic:hover{box-shadow: 10px 10px 15px #999;}
             .pic>span{display: block; width: 0; height: 0; overflow: hidden; position: absolute; z-index: -1;}
-          .gallery_list>ul>li:nth-child(1)>a{background-image: url(../../../img/p03_artists/yg.jpg); background-position: center -30px;}
-          .gallery_list>ul>li:nth-child(2)>a{background-image: url(../../../img/p03_artists/bigbang.jpg);}
-          .gallery_list>ul>li:nth-child(3)>a{background-image: url(../../../img/p03_artists/psy.jpg);}
-          .gallery_list>ul>li:nth-child(4)>a{background-image: url(../../../img/p03_artists/winner.jpg);}
-          .gallery_list>ul>li:nth-child(5)>a{background-image: url(../../../img/p03_artists/iKON.jpg);}
-          .gallery_list>ul>li:nth-child(6)>a{background-image: url(../../../img/p03_artists/blackpink.jpg);}
+          .gallery_list>ul>li:nth-child(1)>a{background-image: url(../../../img/p03_artists/yg.png);}
+          .gallery_list>ul>li:nth-child(2)>a{background-image: url(../../../img/p03_artists/bb.png);}
+          .gallery_list>ul>li:nth-child(3)>a{background-image: url(../../../img/p03_artists/jn.png);}
+          .gallery_list>ul>li:nth-child(4)>a{background-image: url(../../../img/p03_artists/winner.png);}
+          .gallery_list>ul>li:nth-child(5)>a{background-image: url(../../../img/p03_artists/ikon.png);}
+          .gallery_list>ul>li:nth-child(6)>a{background-image: url(../../../img/p03_artists/bp.png);}
           .gallery_list>ul>li:nth-child(7)>a{background-image: url(../../../img/p03_artists/sechskies.jpg); background-position: center top;}
           .gallery_list>ul>li:nth-child(8)>a{background-image: url(../../../img/p03_artists/epikhigh.jpg); background-position: center -80px;}
           .gallery_list>ul>li:nth-child(9)>a{background-image: url(../../../img/p03_artists/akmu.jpg); background-position: center;}
-          .gallery_list>ul>li:nth-child(10)>a{background-image: url(../../../img/p03_artists/cl.jpg);}
-          .gallery_list>ul>li:nth-child(11)>a{background-image: url(../../../img/p03_artists/gd.jpg); background-position: center -20px;}
+          .gallery_list>ul>li:nth-child(10)>a{background-image: url(../../../img/p03_artists/cl.png); background-position: center 80px;}
+          .gallery_list>ul>li:nth-child(11)>a{background-image: url(../../../img/p03_artists/gd.png);}
           .gallery_list>ul>li:nth-child(12)>a{background-image: url(../../../img/p03_artists/leehi.jpg);}
           .artist_name{font-size: 24px; text-align: center;}
     /* //#artistsWrap */  
